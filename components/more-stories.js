@@ -3,11 +3,11 @@ import Container from "./container";
 
 export default function MoreStories({ posts, text = "Recent Posts" }) {
   return (
-    <>
-      <h5 className="mb-8 text-6xl md:text-7xl font-bold tracking-tighter leading-tight">
+    <div className="bg-purple-100 rounded-lg">
+      <h5 className="mb-8 text-gray-700 text-6xl md:text-7xl font-bold tracking-tighter leading-tight">
         {text}
       </h5>
-      <div className="grid grid-cols-1 md:grid-cols-2 md:col-gap-16 lg:col-gap-32 row-gap-20 md:row-gap-32 mb-32">
+      <div className="p-4 m-4 grid grid-cols-1 md:grid-cols-2 md:col-gap-16 lg:col-gap-32 row-gap-20 md:row-gap-32 mb-32">
         {posts.map((post) => (
           <Container>
             <PostPreview
@@ -22,6 +22,6 @@ export default function MoreStories({ posts, text = "Recent Posts" }) {
           </Container>
         ))}
       </div>
-    </>
+    </div>
   );
 }
