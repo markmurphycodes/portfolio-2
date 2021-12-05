@@ -9,7 +9,7 @@ export default function Index() {
           <h1 className="text-3xl rounded-md px-2 py-1 inline-block font-bold text-black-50">
             whoami
           </h1>
-          <div className="bg-purple-50 p-4 mt-4 mb-4">
+          <div className="bg-purple-100 p-4 mt-4 mb-4">
             <p>
               I am a father, a maker, and a doer. I have been fixing and
               breaking computers for around 15 years, and have barely scratched
@@ -20,7 +20,7 @@ export default function Index() {
           <h1 className="text-3xl rounded-md px-2 py-1 inline-block font-bold text-black-50">
             education
           </h1>
-          <div className="bg-purple-50 p-4 mt-4 mb-4">
+          <div className="bg-purple-100 p-4 mt-4 mb-4">
             <h4 className="text-2xl text-gray-500 rounded-md px-2 py-1 font-bold ">
               Master's
             </h4>
@@ -74,7 +74,7 @@ export default function Index() {
               />
             </div>
           </div>
-          <div className="bg-red-50 mb-4 mt-4">
+          <div className="bg-red-100 mb-4 mt-4">
             <h4 className="text-2xl text-gray-500 rounded-md px-2 py-1 font-bold ">
               web
             </h4>
@@ -101,7 +101,7 @@ export default function Index() {
               />
             </div>
           </div>
-          <div className="bg-red-50 mb-4 mt-4">
+          <div className="bg-red-200 mb-4 mt-4">
             <h4 className="text-2xl text-gray-500 rounded-md px-2 py-1 font-bold ">
               databases
             </h4>
@@ -120,7 +120,7 @@ export default function Index() {
               />
             </div>
           </div>
-          <div className="bg-red-50 mb-4 mt-4">
+          <div className="bg-red-300 mb-4 mt-4">
             <h4 className="text-2xl text-gray-500 rounded-md px-2 py-1 font-bold ">
               tools
             </h4>
@@ -148,7 +148,7 @@ export default function Index() {
       <h1 className="text-3xl rounded-md px-2 py-1 inline-block font-bold text-black-50">
         interests
       </h1>
-      <div className="colspan-1 bg-blue-50  p-4">
+      <div className="colspan-1 bg-blue-100  p-4">
         <p>
           These are all things that I'm not necessarily an expert on, but enjoy
           learning about thoroughly.
