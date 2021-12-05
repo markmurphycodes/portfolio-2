@@ -107,7 +107,7 @@ export default function Index() {
             </h4>
             <div className="flex flex-row flex-wrap mt-8">
               <img
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mysql/mysql.png"
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg"
                 className="h-20 w-20 mx-4 my-4"
               />
               <img
@@ -115,7 +115,7 @@ export default function Index() {
                 className="h-20 w-20 mx-4 my-4"
               />
               <img
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mongodb/mongodb.png"
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg"
                 className="h-20 w-20 mx-4 my-4"
               />
             </div>
