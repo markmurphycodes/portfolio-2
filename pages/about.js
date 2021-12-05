@@ -8,12 +8,25 @@ export default function Index() {
           <h1 className="text-3xl rounded-md px-2 py-1 inline-block font-bold text-black-50">
             whoami
           </h1>
+          <p>Coming soon!</p>
+          <h1 className="text-3xl rounded-md px-2 py-1 inline-block font-bold text-black-50">
+            education
+          </h1>
+          <p>Coming soon!</p>
+          <h1 className="text-3xl rounded-md px-2 py-1 inline-block font-bold text-black-50">
+            interests
+          </h1>
+          <p>Coming soon!</p>
         </div>
         {/* Tech Stack */}
         <div className="col-span-1 md:col-span-2">
           <h1 className="text-3xl rounded-md px-2 py-1 inline-block font-bold text-black-50">
             tech
           </h1>
+          <p>
+            More information to come here shortly. In the meantime, enjoy this
+            list of technologies that I like and use!
+          </p>
           <div className="flex flex-row flex-wrap mt-8">
             <img
               src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"

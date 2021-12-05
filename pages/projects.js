@@ -5,7 +5,7 @@ export default function Index({ preview }) {
   return (
     <>
       <Layout preview={preview}>
-        <Intro />
+        This is a new portfolio, I will be adding projects to this page shortly!
       </Layout>
     </>
   );
