@@ -1,4 +1,5 @@
 import RainbowHighlight from "./rainbow-highlight";
+import Fade from "react-reveal/Fade";
 import { RoughNotationGroup } from "react-rough-notation";
 
 const Intro = () => {
@@ -37,7 +38,9 @@ const Intro = () => {
       {/* Image container */}
       <div className="hidden lg:block relative w-full md:w-1/2 -mr-40 mt-20">
         <div className="w-3/4 ">
-          <img src="/me.jpeg" alt="avatar" className=" shadow" />
+          <Fade right big>
+            <img src="/me.jpeg" alt="avatar" className=" shadow" />
+          </Fade>
           <div className="flex flex-row justify-between mt-4"></div>
         </div>
       </div>

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Bounce from "react-reveal/Bounce";
 
 const Header = () => {
   return (
@@ -25,37 +26,39 @@ const Header = () => {
               </svg>
             </button>
           </div>
-          <div className="navbar-menu hidden lg:order-1 lg:block w-full lg:w-2/5">
-            <Link href="/about">
-              <a className="block lg:inline-block mt-4 lg:mt-0 mr-10 text-gray-900 hover:text-indigo-600">
-                about
-              </a>
-            </Link>
-            <Link
-              className="block lg:inline-block mt-4 lg:mt-0 mr-10 text-gray-900 hover:text-indigo-600"
-              href="/projects"
-            >
-              <a className="block lg:inline-block mt-4 lg:mt-0 mr-10 text-gray-900 hover:text-indigo-600">
-                projects
-              </a>
-            </Link>
-            <Link
-              className="block lg:inline-block mt-4 lg:mt-0 mr-10 text-gray-900 hover:text-indigo-600"
-              href="/blog"
-            >
-              <a className="block lg:inline-block mt-4 lg:mt-0 mr-10 text-gray-900 hover:text-indigo-600">
-                blog
-              </a>
-            </Link>
-            <Link
-              className="block lg:inline-block mt-4 lg:mt-0 mr-10 text-gray-900 hover:text-indigo-600"
-              href="/contact"
-            >
-              <a className="block lg:inline-block mt-4 lg:mt-0 mr-10 text-gray-900 hover:text-indigo-600">
-                contact
-              </a>
-            </Link>
-          </div>
+          <Bounce cascade>
+            <div className="navbar-menu hidden lg:order-1 lg:block w-full lg:w-2/5">
+              <Link href="/about">
+                <a className="block lg:inline-block mt-4 lg:mt-0 mr-10 text-gray-900 hover:text-indigo-600">
+                  about
+                </a>
+              </Link>
+              <Link
+                className="block lg:inline-block mt-4 lg:mt-0 mr-10 text-gray-900 hover:text-indigo-600"
+                href="/projects"
+              >
+                <a className="block lg:inline-block mt-4 lg:mt-0 mr-10 text-gray-900 hover:text-indigo-600">
+                  projects
+                </a>
+              </Link>
+              <Link
+                className="block lg:inline-block mt-4 lg:mt-0 mr-10 text-gray-900 hover:text-indigo-600"
+                href="/blog"
+              >
+                <a className="block lg:inline-block mt-4 lg:mt-0 mr-10 text-gray-900 hover:text-indigo-600">
+                  blog
+                </a>
+              </Link>
+              <Link
+                className="block lg:inline-block mt-4 lg:mt-0 mr-10 text-gray-900 hover:text-indigo-600"
+                href="/contact"
+              >
+                <a className="block lg:inline-block mt-4 lg:mt-0 mr-10 text-gray-900 hover:text-indigo-600">
+                  contact
+                </a>
+              </Link>
+            </div>
+          </Bounce>
         </nav>
       </section>
     </>
