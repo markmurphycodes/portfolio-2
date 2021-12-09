@@ -6,12 +6,10 @@ export default class MyDocument extends Document {
       <Html lang="en">
         <Head>
           <script
-            nonce={nonce}
             async
             src="https://www.googletagmanager.com/gtag/js?id=G-42Y4CHJT3E"
           ></script>
           <script
-            nonce={nonce}
             async
             dangerouslySetInnerHTML={{
               __html: `window.dataLayer = window.dataLayer || [];
