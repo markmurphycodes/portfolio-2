@@ -19,7 +19,6 @@ export default class MyDocument extends Document {
                 gtag("config", "G-42Y4CHJT3E");`,
             }}
           />
-          <title>Mark Murphy, Developer</title>
         </Head>
         <body>
           <Main />
