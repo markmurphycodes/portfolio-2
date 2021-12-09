@@ -1,5 +1,8 @@
 import PageLayout from "../components/page-layout";
 import SectionSeparator from "../components/section-separator";
+import Thumbnail from '../components/thumbnail';
+
+import {education, tech} from '../const';
 
 export default function Index() {
   return (
@@ -25,20 +28,14 @@ export default function Index() {
               Master's
             </h4>
             <p>MS | Computer Science | 2024</p>
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Georgia_Tech_seal.svg/2048px-Georgia_Tech_seal.svg.png"
-              className="h-20 w-20 mx-4 my-4 center"
-            />
+            <Thumbnail img={education.gatech} />
             <p>Georgia Institute of Technology</p>
             <br />
             <h4 className="text-2xl text-gray-500 rounded-md px-2 py-1 font-bold ">
               Bachelor's
             </h4>
             <p>BS | Computer Science | 2021</p>
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/e/eb/WGU-AcademicLogo_Seal.png"
-              className="h-20 w-20 mx-4 my-4 center"
-            />
+            <Thumbnail img={education.wgu} />
             <p>Western Governors University</p>
           </div>
         </div>
@@ -52,26 +49,11 @@ export default function Index() {
               languages
             </h4>
             <div className="flex flex-row flex-wrap mt-8">
-              <img
-                src="https://raw.githubusercontent.com/jmnote/z-icons/master/svg/java.svg"
-                className="h-20 w-20 mx-4 my-4"
-              />
-              <img
-                src="https://raw.githubusercontent.com/jmnote/z-icons/master/svg/c.svg"
-                className="h-20 w-20 mx-4 my-4"
-              />
-              <img
-                src="https://raw.githubusercontent.com/jmnote/z-icons/master/svg/php.svg"
-                className="h-20 w-20 mx-4 my-4"
-              />
-              <img
-                src="https://raw.githubusercontent.com/jmnote/z-icons/master/svg/python.svg"
-                className="h-20 w-20 mx-4 my-4"
-              />
-              <img
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"
-                className="h-20 w-20 mx-4 my-4"
-              />
+                <Thumbnail img={tech.java} />
+                <Thumbnail img={tech.c} />
+                <Thumbnail img={tech.php} />
+                <Thumbnail img={tech.python} />
+                <Thumbnail img={tech.javascript} />
             </div>
           </div>
           <div className="bg-red-100 mb-4 mt-4">
@@ -79,26 +61,11 @@ export default function Index() {
               web
             </h4>
             <div className="flex flex-row flex-wrap mt-8">
-              <img
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png"
-                className="h-20 w-20 mx-4 my-4"
-              />
-              <img
-                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-line.svg"
-                className="h-20 w-20 mx-4 my-4"
-              />
-              <img
-                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg"
-                className="h-20 w-20 mx-4 my-4"
-              />
-              <img
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png"
-                className="h-20 w-20 mx-4 my-4"
-              />
-              <img
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png"
-                className="h-20 w-20 mx-4 my-4"
-              />
+                <Thumbnail img={tech.react} />
+                <Thumbnail img={tech.nextjs} />
+                <Thumbnail img={tech.node} />
+                <Thumbnail img={tech.html} />
+                <Thumbnail img={tech.css} />
             </div>
           </div>
           <div className="bg-red-200 mb-4 mt-4">
@@ -106,18 +73,9 @@ export default function Index() {
               databases
             </h4>
             <div className="flex flex-row flex-wrap mt-8">
-              <img
-                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg"
-                className="h-20 w-20 mx-4 my-4"
-              />
-              <img
-                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg"
-                className="h-20 w-20 mx-4 my-4"
-              />
-              <img
-                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg"
-                className="h-20 w-20 mx-4 my-4"
-              />
+                <Thumbnail img={tech.mysql} />
+                <Thumbnail img={tech.postgres} />
+                <Thumbnail img={tech.mongodb} />
             </div>
           </div>
           <div className="bg-red-300 mb-4 mt-4">
@@ -125,22 +83,10 @@ export default function Index() {
               tools
             </h4>
             <div className="flex flex-row flex-wrap mt-8">
-              <img
-                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg"
-                className="h-20 w-20 mx-4 my-4"
-              />
-              <img
-                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original-wordmark.svg"
-                className="h-20 w-20 mx-4 my-4"
-              />
-              <img
-                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vim/vim-original.svg"
-                className="h-20 w-20 mx-4 my-4"
-              />
-              <img
-                src="https://raw.githubusercontent.com/jmnote/z-icons/master/svg/bash.svg"
-                className="h-20 w-20 mx-4 my-4"
-              />
+                <Thumbnail img={tech.linux} />
+                <Thumbnail img={tech.git} />
+                <Thumbnail img={tech.vim} />
+                <Thumbnail img={tech.bash} />
             </div>
           </div>
         </div>
