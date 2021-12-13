@@ -1,6 +1,7 @@
 import PageLayout from "../components/page-layout";
 import SectionSeparator from "../components/section-separator";
 import Thumbnail from "../components/thumbnail";
+import { Fade } from "react-reveal";
 
 import { education, tech } from "../const";
 
@@ -28,14 +29,18 @@ export default function Index() {
               Master's
             </h4>
             <p>MS | Computer Science | 2024</p>
-            <Thumbnail img={education.gatech} />
+            <Fade top order={1}>
+              <Thumbnail img={education.gatech} />
+            </Fade>
             <p>Georgia Institute of Technology</p>
             <br />
             <h4 className="text-2xl text-gray-500 rounded-md px-2 py-1 font-bold ">
               Bachelor's
             </h4>
             <p>BS | Computer Science | 2021</p>
-            <Thumbnail img={education.wgu} />
+            <Fade top order={2}>
+              <Thumbnail img={education.wgu} />
+            </Fade>
             <p>Western Governors University</p>
           </div>
         </div>
@@ -49,11 +54,21 @@ export default function Index() {
               languages
             </h4>
             <div className="flex flex-row flex-wrap mt-8">
-              <Thumbnail img={tech.java} />
-              <Thumbnail img={tech.c} />
-              <Thumbnail img={tech.php} />
-              <Thumbnail img={tech.python} />
-              <Thumbnail img={tech.javascript} />
+              <Fade top order={3}>
+                <Thumbnail img={tech.java} />
+              </Fade>
+              <Fade top order={4}>
+                <Thumbnail img={tech.c} />
+              </Fade>
+              <Fade top order={5}>
+                <Thumbnail img={tech.php} />
+              </Fade>
+              <Fade top order={6}>
+                <Thumbnail img={tech.python} />
+              </Fade>
+              <Fade top order={7}>
+                <Thumbnail img={tech.javascript} />
+              </Fade>
             </div>
           </div>
           <div className="bg-red-100 rounded-xl mb-4 mt-4">
@@ -61,11 +76,21 @@ export default function Index() {
               web
             </h4>
             <div className="flex flex-row flex-wrap mt-8">
-              <Thumbnail img={tech.react} />
-              <Thumbnail img={tech.nextjs} />
-              <Thumbnail img={tech.node} />
-              <Thumbnail img={tech.html} />
-              <Thumbnail img={tech.css} />
+              <Fade top order={8}>
+                <Thumbnail img={tech.react} />
+              </Fade>
+              <Fade top order={9}>
+                <Thumbnail img={tech.nextjs} />
+              </Fade>
+              <Fade top order={10}>
+                <Thumbnail img={tech.node} />
+              </Fade>
+              <Fade top order={11}>
+                <Thumbnail img={tech.html} />
+              </Fade>
+              <Fade top order={12}>
+                <Thumbnail img={tech.css} />
+              </Fade>
             </div>
           </div>
           <div className="bg-red-200 rounded-xl mb-4 mt-4">
@@ -73,9 +98,15 @@ export default function Index() {
               databases
             </h4>
             <div className="flex flex-row flex-wrap mt-8">
-              <Thumbnail img={tech.mysql} />
-              <Thumbnail img={tech.postgres} />
-              <Thumbnail img={tech.mongodb} />
+              <Fade top order={13}>
+                <Thumbnail img={tech.mysql} />
+              </Fade>
+              <Fade top order={14}>
+                <Thumbnail img={tech.postgres} />
+              </Fade>
+              <Fade top order={15}>
+                <Thumbnail img={tech.mongodb} />
+              </Fade>
             </div>
           </div>
           <div className="bg-red-300 rounded-xl mb-4 mt-4">
@@ -83,10 +114,18 @@ export default function Index() {
               tools
             </h4>
             <div className="flex flex-row flex-wrap mt-8">
-              <Thumbnail img={tech.linux} />
-              <Thumbnail img={tech.git} />
-              <Thumbnail img={tech.vim} />
-              <Thumbnail img={tech.bash} />
+              <Fade top order={16}>
+                <Thumbnail img={tech.linux} />
+              </Fade>
+              <Fade top order={17}>
+                <Thumbnail img={tech.git} />
+              </Fade>
+              <Fade top order={18}>
+                <Thumbnail img={tech.vim} />
+              </Fade>
+              <Fade top order={19}>
+                <Thumbnail img={tech.bash} />
+              </Fade>
             </div>
           </div>
         </div>

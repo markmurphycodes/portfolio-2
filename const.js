@@ -41,7 +41,7 @@ export const projects = [
     repo: "https://www.github.com/markmurphycodes/os161",
   },
   {
-    picture: "fire_risk.png",
+    picture: "/fire_risk.png",
     description:
       "This project uses NOAA and USFS data to predict the risk and severity of a fire, given the potential weather and location",
     techStack: [tech.python, tech.html, tech.css],
