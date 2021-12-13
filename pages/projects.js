@@ -1,14 +1,24 @@
 import PageLayout from "../components/page-layout";
-import Project from '../components/project';
+import Project from "../components/project";
+import { projects } from "../const";
 
-export default function Index() {
+const Projects = () => {
   return (
     <PageLayout color="#EB8258" header="My Projects">
-      <div className="pt-20 grid grid-cols-1 md:grid-cols-3 max-w-6xl mx-auto gap-y-20 gap-x-20">
-        <div className="col-span-1 ">
-      <Project />
-        </div>
-      </div>
+      {projects.map((val, index) => {
+        return (
+          <Project
+            key={index}
+            right={index % 2 === 0}
+            picture={val.picture}
+            description={val.description}
+            techStack={val.techStack}
+            repo={val.repo}
+          />
+        );
+      })}
     </PageLayout>
   );
-}
+};
+
+export default Projects;

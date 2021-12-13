@@ -1,8 +1,8 @@
 import PageLayout from "../components/page-layout";
 import SectionSeparator from "../components/section-separator";
-import Thumbnail from '../components/thumbnail';
+import Thumbnail from "../components/thumbnail";
 
-import {education, tech} from '../const';
+import { education, tech } from "../const";
 
 export default function Index() {
   return (
@@ -12,7 +12,7 @@ export default function Index() {
           <h1 className="text-3xl rounded-md px-2 py-1 inline-block font-bold text-black-50">
             whoami
           </h1>
-          <div className="bg-purple-100 p-4 mt-4 mb-4">
+          <div className="bg-purple-100 rounded-xl p-4 mt-4 mb-4">
             <p>
               I am a father, a maker, and a doer. I have been fixing and
               breaking computers for around 15 years, and have barely scratched
@@ -23,7 +23,7 @@ export default function Index() {
           <h1 className="text-3xl rounded-md px-2 py-1 inline-block font-bold text-black-50">
             education
           </h1>
-          <div className="bg-purple-100 p-4 mt-4 mb-4">
+          <div className="bg-purple-100 rounded-xl p-4 mt-4 mb-4">
             <h4 className="text-2xl text-gray-500 rounded-md px-2 py-1 font-bold ">
               Master's
             </h4>
@@ -44,49 +44,49 @@ export default function Index() {
           <h1 className="text-3xl rounded-md px-2 py-1 inline-block font-bold text-black-50">
             tech
           </h1>
-          <div className="bg-red-50 mb-4 mt-4">
+          <div className="bg-red-50 rounded-xl mb-4 mt-4">
             <h4 className="text-2xl text-gray-500 rounded-md px-2 py-1 font-bold ">
               languages
             </h4>
             <div className="flex flex-row flex-wrap mt-8">
-                <Thumbnail img={tech.java} />
-                <Thumbnail img={tech.c} />
-                <Thumbnail img={tech.php} />
-                <Thumbnail img={tech.python} />
-                <Thumbnail img={tech.javascript} />
+              <Thumbnail img={tech.java} />
+              <Thumbnail img={tech.c} />
+              <Thumbnail img={tech.php} />
+              <Thumbnail img={tech.python} />
+              <Thumbnail img={tech.javascript} />
             </div>
           </div>
-          <div className="bg-red-100 mb-4 mt-4">
+          <div className="bg-red-100 rounded-xl mb-4 mt-4">
             <h4 className="text-2xl text-gray-500 rounded-md px-2 py-1 font-bold ">
               web
             </h4>
             <div className="flex flex-row flex-wrap mt-8">
-                <Thumbnail img={tech.react} />
-                <Thumbnail img={tech.nextjs} />
-                <Thumbnail img={tech.node} />
-                <Thumbnail img={tech.html} />
-                <Thumbnail img={tech.css} />
+              <Thumbnail img={tech.react} />
+              <Thumbnail img={tech.nextjs} />
+              <Thumbnail img={tech.node} />
+              <Thumbnail img={tech.html} />
+              <Thumbnail img={tech.css} />
             </div>
           </div>
-          <div className="bg-red-200 mb-4 mt-4">
+          <div className="bg-red-200 rounded-xl mb-4 mt-4">
             <h4 className="text-2xl text-gray-500 rounded-md px-2 py-1 font-bold ">
               databases
             </h4>
             <div className="flex flex-row flex-wrap mt-8">
-                <Thumbnail img={tech.mysql} />
-                <Thumbnail img={tech.postgres} />
-                <Thumbnail img={tech.mongodb} />
+              <Thumbnail img={tech.mysql} />
+              <Thumbnail img={tech.postgres} />
+              <Thumbnail img={tech.mongodb} />
             </div>
           </div>
-          <div className="bg-red-300 mb-4 mt-4">
+          <div className="bg-red-300 rounded-xl mb-4 mt-4">
             <h4 className="text-2xl text-gray-500 rounded-md px-2 py-1 font-bold ">
               tools
             </h4>
             <div className="flex flex-row flex-wrap mt-8">
-                <Thumbnail img={tech.linux} />
-                <Thumbnail img={tech.git} />
-                <Thumbnail img={tech.vim} />
-                <Thumbnail img={tech.bash} />
+              <Thumbnail img={tech.linux} />
+              <Thumbnail img={tech.git} />
+              <Thumbnail img={tech.vim} />
+              <Thumbnail img={tech.bash} />
             </div>
           </div>
         </div>
@@ -94,7 +94,7 @@ export default function Index() {
       <h1 className="text-3xl rounded-md px-2 py-1 inline-block font-bold text-black-50">
         interests
       </h1>
-      <div className="colspan-1 bg-blue-100  p-4">
+      <div className="colspan-1 bg-blue-100 rounded-xl p-4">
         <p>
           These are all things that I'm not necessarily an expert on, but enjoy
           learning about thoroughly.
